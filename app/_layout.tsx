@@ -9,7 +9,6 @@ import '../global.css'
 
 import { useColorScheme } from '@/hooks/useColorScheme'
 
-// Prevent the splash screen from auto-hiding before asset loading is complete.
 SplashScreen.preventAutoHideAsync()
 
 export default function RootLayout() {
@@ -33,7 +32,23 @@ export default function RootLayout() {
       <Stack>
         <Stack.Screen
           name='(tabs)'
-          options={{ headerShown: false }}
+          options={{ headerShown: false, title: 'Shop' }}
+        />
+        <Stack.Screen
+          name='categories'
+          options={{ headerShown: true, title: 'Categories' }}
+        />
+        <Stack.Screen
+          name='products'
+          options={{ headerShown: true, title: 'Products' }}
+        />
+        <Stack.Screen
+          name='cart'
+          options={{ headerShown: true, presentation: 'modal', title: 'Cart' }}
+        />
+        <Stack.Screen
+          name='auth'
+          options={{ headerShown: true, title: 'Authentication' }}
         />
         <Stack.Screen name='+not-found' />
       </Stack>
