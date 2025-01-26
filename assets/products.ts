@@ -1,4 +1,4 @@
-import { Product } from './types/product';
+import { Product } from './types/product'
 
 export const PRODUCTS: Product[] = [
   {
@@ -24,10 +24,7 @@ export const PRODUCTS: Product[] = [
     title: 'Dell XPS 13',
     slug: 'dell-xps-13',
     heroImage: require('../assets/images/dell-1.jpg'),
-    imagesUrl: [
-      require('../assets/images/dell-1.jpg'),
-      require('../assets/images/dell-2.jpg'),
-    ],
+    imagesUrl: [require('../assets/images/dell-1.jpg'), require('../assets/images/dell-2.jpg')],
     price: 1099.99,
     category: {
       imageUrl: require('../assets/images/mac-book-1.jpg'),
@@ -41,10 +38,7 @@ export const PRODUCTS: Product[] = [
     title: 'IPhone 15',
     slug: 'i-phone-15',
     heroImage: require('../assets/images/i-phone-1.jpg'),
-    imagesUrl: [
-      require('../assets/images/i-phone-2.jpg'),
-      require('../assets/images/i-phone-3.jpg'),
-    ],
+    imagesUrl: [require('../assets/images/i-phone-2.jpg'), require('../assets/images/i-phone-3.jpg')],
     price: 999.99,
     category: {
       imageUrl: require('../assets/images/i-phone-1.jpg'),
@@ -58,10 +52,7 @@ export const PRODUCTS: Product[] = [
     title: 'Samsung Galaxy S21',
     slug: 'samsung-galaxy-s21',
     heroImage: require('../assets/images/samsung-1.jpg'),
-    imagesUrl: [
-      require('../assets/images/samsung-1.jpg'),
-      require('../assets/images/samsung-2.jpg'),
-    ],
+    imagesUrl: [require('../assets/images/samsung-1.jpg'), require('../assets/images/samsung-2.jpg')],
     price: 799.99,
     category: {
       imageUrl: require('../assets/images/i-phone-1.jpg'),
@@ -75,10 +66,7 @@ export const PRODUCTS: Product[] = [
     title: 'Headset',
     slug: 'headset',
     heroImage: require('../assets/images/head-set-1.jpg'),
-    imagesUrl: [
-      require('../assets/images/head-set-1.jpg'),
-      require('../assets/images/head-set-2.jpg'),
-    ],
+    imagesUrl: [require('../assets/images/head-set-1.jpg'), require('../assets/images/head-set-2.jpg')],
     price: 499.99,
     category: {
       imageUrl: require('../assets/images/head-set-1.jpg'),
@@ -110,10 +98,7 @@ export const PRODUCTS: Product[] = [
     title: 'Nintendo Switch',
     slug: 'nintendo-switch',
     heroImage: require('../assets/images/nintendo-switch-1.jpg'),
-    imagesUrl: [
-      require('../assets/images/nintendo-switch-1.jpg'),
-      require('../assets/images/nintendo-switch-2.jpg'),
-    ],
+    imagesUrl: [require('../assets/images/nintendo-switch-1.jpg'), require('../assets/images/nintendo-switch-2.jpg')],
     price: 299.99,
     category: {
       imageUrl: require('../assets/images/ps-5-1.jpg'),
@@ -122,4 +107,4 @@ export const PRODUCTS: Product[] = [
     },
     maxQuantity: 8,
   },
-];
+]

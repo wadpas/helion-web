@@ -7,7 +7,7 @@ const ProductListItem = ({ product }: { product: Product }) => {
   return (
     <Link
       asChild
-      href={`/product/${product.slug}` as RelativePathString}>
+      href={`/products/${product.slug}` as RelativePathString}>
       <Pressable style={styles.item}>
         <View style={styles.itemImageContainer}>
           <Image

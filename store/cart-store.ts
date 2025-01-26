@@ -1,17 +1,9 @@
+import { CartItem } from '@/assets/types/cartItem'
 import { create } from 'zustand'
 
-type CartItemType = {
-  id: number
-  title: string
-  heroImage: string
-  price: number
-  quantity: number
-  maxQuantity: number
-}
-
 type CartState = {
-  items: CartItemType[]
-  addItem: (item: CartItemType) => void
+  items: CartItem[]
+  addItem: (item: CartItem) => void
   removeItem: (id: number) => void
   incrementItem: (id: number) => void
   decrementItem: (id: number) => void
@@ -20,12 +12,12 @@ type CartState = {
   resetCart: () => void
 }
 
-const initialCartItems: CartItemType[] = []
+const initialCartItems: CartItem[] = []
 
 export const useCartStore = create<CartState>((set, get) => ({
   items: initialCartItems,
 
-  addItem: (item: CartItemType) => {
+  addItem: (item: CartItem) => {
     const existingItem = get().items.find((i) => i.id === item.id)
     if (existingItem) {
       set((state) => ({
