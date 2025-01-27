@@ -1,4 +1,4 @@
-import { Order } from './types/order';
+import { Order } from './types/order'
 
 export const ORDERS: Order[] = [
   {
@@ -105,4 +105,4 @@ export const ORDERS: Order[] = [
       },
     ],
   },
-];
+]

@@ -77,7 +77,7 @@ const Product = () => {
           keyExtractor={(item, index) => index.toString()}
           renderItem={({ item }) => (
             <Image
-              source={item}
+              source={{ uri: item }}
               style={styles.image}
             />
           )}
